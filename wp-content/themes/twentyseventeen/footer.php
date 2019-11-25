@@ -35,16 +35,16 @@
 								)
 							);
 						?>
-					</nav>
+					</nav><!-- .social-navigation -->
 					<?php
 				endif;
 
 				get_template_part( 'template-parts/footer/site', 'info' );
 				?>
-			</div>
-		</footer>
-	</div>
-</div>
+			</div><!-- .wrap -->
+		</footer><!-- #colophon -->
+	</div><!-- .site-content-contain -->
+</div><!-- #page -->
 <?php wp_footer(); ?>
 
 </body>
