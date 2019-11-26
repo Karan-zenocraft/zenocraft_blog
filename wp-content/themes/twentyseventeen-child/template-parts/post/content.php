@@ -11,44 +11,31 @@
  */
 
 ?>
-
-<<<<<<< HEAD
- <div class="col-md-4">
-
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<?php
-	if ( is_sticky() && is_home() ) :
-		echo twentyseventeen_get_svg( array( 'icon' => 'thumb-tack' ) );
-	endif;
-	?>
-	
-    
-    
-       
-    
-    <!-- .entry-header -->
-
-	<?php if ( '' !== get_the_post_thumbnail() && ! is_single() ) : ?>
-		<div class="post-thumbnail">
-			<a href="<?php the_permalink(); ?>">
-				<?php the_post_thumbnail( 'twentyseventeen-featured-image' ); ?>
-			</a>
-		</div>
-    
-    <!-- .post-thumbnail -->
-	<?php endif; ?>
-    
-    
-    <header class="entry-header">
-=======
+<div class="col-md-4">
 <article id="post-<?php the_ID();?>" <?php post_class();?>>
 	<?php
 if (is_sticky() && is_home()):
     echo twentyseventeen_get_svg(array('icon' => 'thumb-tack'));
 endif;
 ?>
-	<header class="entry-header">
->>>>>>> 109e9cd6502a84f5a1328da20d69d783877facc6
+    
+	
+
+
+
+    <!-- .entry-header -->
+
+	<?php if ('' !== get_the_post_thumbnail() && !is_single()): ?>
+		<div class="post-thumbnail">
+			<a href="<?php the_permalink();?>">
+				<?php the_post_thumbnail('twentyseventeen-featured-image');?>
+			</a>
+		</div>
+
+    <!-- .post-thumbnail -->
+	<?php endif;?>
+    
+    <header class="entry-header">
 		<?php
 if ('post' === get_post_type()) {
     echo '<div class="entry-meta">';
@@ -65,23 +52,7 @@ if ('post' === get_post_type()) {
 
 ?>
 	</header>
-<<<<<<< HEAD
-=======
-
-
-
-    <!-- .entry-header -->
-
-	<?php if ('' !== get_the_post_thumbnail() && !is_single()): ?>
-		<div class="post-thumbnail">
-			<a href="<?php the_permalink();?>">
-				<?php the_post_thumbnail('twentyseventeen-featured-image');?>
-			</a>
-		</div>
-
-    <!-- .post-thumbnail -->
-	<?php endif;?>
->>>>>>> 109e9cd6502a84f5a1328da20d69d783877facc6
+    
 
 	<div class="entry-content">
 		<?php
@@ -104,21 +75,11 @@ wp_link_pages(
 ?>
 	</div><!-- .entry-content -->
 
-            
-     
-        
-            
 	<?php
 if (is_single()) {
     twentyseventeen_entry_footer();
 }
 ?>
 
-<<<<<<< HEAD
-</article><!-- #post-<?php the_ID(); ?> -->
-    
-    </div>
-
-=======
 </article><!-- #post-<?php the_ID();?> -->
->>>>>>> 109e9cd6502a84f5a1328da20d69d783877facc6
+</div>

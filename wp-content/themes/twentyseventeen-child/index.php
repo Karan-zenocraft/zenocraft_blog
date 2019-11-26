@@ -29,22 +29,15 @@ get_header();?>
 	<?php endif;?>
 
 	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
-<<<<<<< HEAD
+		<main id="main" class="site-main Multiblog" role="main">
 <div class="row">
-=======
-
->>>>>>> 109e9cd6502a84f5a1328da20d69d783877facc6
 			<?php
 if (have_posts()):
 
     /* Start the Loop */
     while (have_posts()):
         the_post();
-<<<<<<< HEAD
 
-=======
->>>>>>> 109e9cd6502a84f5a1328da20d69d783877facc6
         /*
          * Include the Post-Format-specific template for the content.
          * If you want to override this in a child theme, then include a file
@@ -68,11 +61,7 @@ else:
 
 endif;
 ?>
-<<<<<<< HEAD
 </div>
-=======
-
->>>>>>> 109e9cd6502a84f5a1328da20d69d783877facc6
 		</main><!-- #main -->
 	</div><!-- #primary -->
 	<?php get_sidebar();?>
