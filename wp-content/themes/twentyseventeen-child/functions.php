@@ -12,6 +12,7 @@ function my_theme_enqueue_styles()
         wp_get_theme()->get('Version')
     );
     wp_enqueue_style('bootstrap-css', get_stylesheet_directory_uri() . '/css/bootstrap4.css');
+    wp_enqueue_style('font-awesome-min-css', get_stylesheet_directory_uri() . '/css/font-awesome.min.css');
     wp_enqueue_script('bootstrap-js', get_stylesheet_directory_uri() . '/js/bootstrap4.js');
 }
 add_action('wp_enqueue_scripts', 'my_theme_enqueue_styles');
