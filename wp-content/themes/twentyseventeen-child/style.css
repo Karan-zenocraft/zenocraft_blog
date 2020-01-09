@@ -468,7 +468,7 @@ footer .FooterInner h2{margin-bottom: 0px;text-align: left;}
     #reply-title.comment-reply-title{font-size: 14px;}
     .comment-author .fn, .comment-metadata a, .comment-content p, .reply{margin-left: 5px}
     footer .col-md-6.justify-content-end{justify-content: flex-start!important;}
-   
+    
 
 @media(max-width:768px){
 footer .col-md-6.justify-content-end{order: 0;}
